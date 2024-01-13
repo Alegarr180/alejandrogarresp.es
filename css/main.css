@@ -1,0 +1,247 @@
+body {
+  grid-template-columns: 20% auto;
+  margin: 0px;
+  font-family: arial,sans-serif;
+}
+
+
+
+.sidebar {
+
+  float: left;
+  background-color: #002245;
+  padding-top: 50px;
+  width: 15%;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  margin-left: 0px;
+  position: sticky;
+}
+
+.sidebar img {
+
+  padding-left: 50px;
+  width: 50%;
+  
+}
+
+.sidebar ul {
+  padding-top: 50px;
+  list-style: none;
+  color: white;
+}
+
+.sidebar li {
+
+  padding: 10px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar a:visited {
+
+  color: white;
+}
+
+.background {
+
+        background: url("../img/wallpaper.jpg") no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 100vh;
+      }
+
+.about {
+  max-width: 1170px;
+  width: 100%;
+  margin-left: 15%;
+  margin-right: auto;
+  padding: 0 40px;
+  clear: both;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.about img {
+
+  padding-top: 5%;
+  width: 35%;
+  float: left;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.data {
+
+  padding-left: 5%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+.data ul {
+
+  columns: 2;
+  list-style: none;
+  padding-left: 0;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.data li {
+
+  white-space: nowrap;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.data li b {
+
+padding-right: 5px;
+}
+
+.data span {
+
+  padding-right: 10px;
+}
+
+.data h2 {
+
+  padding-bottom: 2%;
+  margin: 0;
+}
+
+.data p {
+
+  line-height: 2;
+  padding-bottom: 10px;
+}
+
+.data a {
+
+  text-decoration: none;
+  color: black;
+}
+
+#download {
+
+  background-color: #4169e1;
+  padding: 20px 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.experience {
+
+  margin-left: 350px;
+  padding-left: 10%;
+  padding-top: 5%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-color: rgb(240, 240, 240);
+}
+.experience h2 {
+
+  padding-bottom: 5%;
+  margin: 0;
+}
+
+.exp {
+
+  display: flex;
+}
+
+.jobs ul {
+
+  padding: 0;
+  columns: 3;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.jobs li {
+  list-style: none;
+
+}
+
+.jobs li h3, h4 {
+
+  color: darkgrey;
+}
+
+.jobs .tittle {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.subtittle {
+
+  display: flex;
+}
+
+
+.jobs .subtittle h3, h4 {
+
+  padding-right: 5px;
+  margin-top: 0;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 305px;
+  height: 250px;
+  perspective: 1000px; 
+  
+  margin-right: 125px;
+  margin-bottom: 90px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+  padding: 30px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 9%);
+  
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: dodgerblue;
+  color: white;
+  box-shadow: 0 0 20px rgb(0 0 0 / 9%);
+  text-align: center;
+  padding: 30px;
+  margin-left: -20%;
+}

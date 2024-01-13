@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>Curriculum Vitae | Alejandro Garres</title>
+    <meta name="description" content="Learn more about Alejandro Garres Pelaz's profile and professional career.">
+  <script type="text/javascript">
+    function toggleDarkMode() {
+            const body = document.body;
+            const span = document.querySelector('td h1 span'); 
+            const button = document.getElementById("dark");
+
+            body.classList.toggle("dark-mode");
+            button.classList.toggle("dark-mode");
+    
+            // Almacena la preferencia en localStorage
+            const isDarkMode = body.classList.contains("dark-mode");
+            localStorage.setItem("darkMode", isDarkMode);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const savedDarkMode = localStorage.getItem("darkMode");
+
+            if (savedDarkMode === "true") {
+                            
+                document.body.classList.add("dark-mode");
+                document.getElementById("dark").classList.add("dark-mode");
+                
+            }
+        });
+</script>
+</head>
+<body>
+
+    <div class="lang">
+
+        <img id="dark" onclick="toggleDarkMode()" src="../img/dark-mode.svg" width="48px">
+
+        <p><img id="en" src="../img/united-kingdom.png" alt="EN" width="48px"></p>
+        <p>/</p>
+        <a href="../index.html"><img id="es" src="../img/spain.png" alt="ES" width="48px"></a>
+    </div>
+
+    <img id="one" src="../img/logo-Google.png" alt="logo-Google">
+    
+    <div class="contenedor">
+        <table>
+            <tr>
+                <td><span class="material-icons md-36">search</span></td>
+                <td></td>
+                <td></td>
+                <td><h1>Alejandro Garres Pelaz<span>&#160;</span></h1></td>
+            </tr>
+        </table>       
+    </div>
+    <br>
+    <br>
+    <div class="botones">
+        <a href="./results.html"><input class="search" value="Google Search" aria-label="Buscar con Google" name="search" type="submit"></a>
+        <a href="./results.html"><input class="lucky" value="I'm Feeling Lucky" aria-label="Voy a tener suerte" name="lucky" type="submit"></a>
+    </div>
+    <script type="text/javascript" src="../js/enterkey.js"></script>
+</body>
+</html>

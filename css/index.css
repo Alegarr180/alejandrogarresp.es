@@ -1,0 +1,171 @@
+.material-icons.md-36 { font-size: 36px; }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: rgb(38, 42, 43);
+    color: rgb(232, 230, 227);
+}
+
+body.dark-mode .botones input {
+    background-color: rgb(64, 69, 72);
+    color: rgb(232, 230, 227);
+}
+
+body.dark-mode td h1 span {
+    background-color: rgb(38, 42, 43);
+    color: rgb(232, 230, 227);
+}
+
+#dark.dark-mode {
+    filter: invert();
+}
+
+#dark {
+    margin-right: 20px;
+    padding-bottom: 7px;
+}
+
+#dark:hover {
+    cursor: pointer;
+}
+
+.lang {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2em;
+}
+
+#en {
+
+    text-decoration: none;
+    color: #000;
+    padding-right: 5px;
+}
+
+#es {
+
+    color: #000;
+    padding-left: 5px;
+    
+}
+
+#one {
+
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.contenedor {
+	margin: auto;
+	display: table;
+    border-style: solid;
+    border-color: rgb(109, 109, 109);
+    border-width: 2px;
+    border-radius: 100px;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+
+
+h1 { 
+	position: relative; 
+	float: left;
+	font-size: 2.5em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: rgb(255, 255, 255);
+    border-left: 1px solid #000;
+    animation: escribir 3s steps(22);
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+.search {
+    background-color: aliceblue;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+}
+.lucky {
+    background-color: aliceblue;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.botones {
+
+    text-align: center;
+}
+
+.search:hover {
+
+    box-shadow: 2px 2px 2px 1px #aaaaaa;
+    cursor: pointer;
+}
+
+.lucky:hover {
+
+    box-shadow: 2px 2px 2px 1px #aaaaaa;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+
+    h1{font-size: 2em;margin-left: 40px;}
+}
+
+@media (max-width: 600px) {
+
+    h1{font-size: 1.75em;margin-left: 20px;}
+    #one{width: 350px;}
+}
+
+@media (max-width: 500px) {
+
+    h1{font-size: 1.5em;margin-left: 0px;}
+    #one{width: 350px;}
+}
+
+@media (max-width: 400px) {
+
+    h1{font-size: 1.5em;margin-left: 0;}
+    #one{width: 300px;}
+}
+
+@media (max-width: 375px) {
+
+    h1{font-size: 1.25em;margin-left: 0;}
+    #one{width: 300px;}
+}
+
+
+
+
+
+
+
+
