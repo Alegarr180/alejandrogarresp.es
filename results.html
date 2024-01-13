@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,6 +10,33 @@
   <link type="text/css" rel="stylesheet" href="css/normalize.css">
   <link type="text/css" rel="stylesheet" href="css/reset-local.css">
   <link type="text/css" rel="stylesheet" href="css/style_results.css">
+
+  <script type="text/javascript">
+    function toggleDarkMode() {
+            const body = document.body;
+            const span = document.querySelector('td h1 span'); 
+            const button = document.getElementById("dark");
+
+            body.classList.toggle("dark-mode");
+            button.classList.toggle("dark-mode");
+    
+            // Almacena la preferencia en localStorage
+            const isDarkMode = body.classList.contains("dark-mode");
+            localStorage.setItem("darkMode", isDarkMode);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const savedDarkMode = localStorage.getItem("darkMode");
+
+            if (savedDarkMode === "true") {
+                            
+                document.body.classList.add("dark-mode");
+                document.getElementById("dark").classList.add("dark-mode");
+                
+            }
+        });
+</script>
+
 </head>
 
 <body>
@@ -19,7 +44,7 @@
   <header>
     <!-- Logo -->
     <div class="logo-area">
-      <a href="#" title="Go to Google Home">
+      <a href="./index.html" title="Go to Google Home">
         <img src="img/google-logo.png" alt="Google" class="logo">
       </a>
     </div>
@@ -126,10 +151,13 @@
       </div>
     </nav>
     <div id="lang">
+
+      <img id="dark" onclick="toggleDarkMode()" src="./img/dark-mode.svg" width="32px">
+
       <a id="en" href="./en/results.html"><img src="./img/united-kingdom.png" alt="EN" width="32px"></a>
-        <p>/</p>
-        <p id="es"><img src="./img/spain.png" alt="ES" width="32px"></p>
-    </div>
+      <p>/</p>
+      <p id="es"><img src="./img/spain.png" alt="ES" width="32px"></p>
+  </div>
   </header>
 
   <!-- Main Content -->
