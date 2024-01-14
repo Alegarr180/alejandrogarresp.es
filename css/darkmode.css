@@ -1,46 +1,102 @@
-@charset "utf-8";
-
-body.dark{
-	background-color: #000;
-	color: #bbb;
-}
-body.dark h3{
-	color: #fff;
-}
-body.dark .arlo_tm_topbar.animate{
-	background-color: #000;
-	box-shadow: 0px 0px 20px rgb(255 255 255 / 9%);
-}
-body.dark .arlo_tm_topbar.animate .logo .dark{display: none;}
-body.dark .arlo_tm_topbar.animate .logo .light{display: block;}
-body.dark .arlo_tm_topbar.animate .menu ul li a{color: #fff;}
-body.dark .arlo_tm_about .left .about_image_wrap .border .inner{border-color: rgba(255,255,255,.2);}
-body.dark .arlo_tm_about ul li label{color: #fff;}
-body.dark .arlo_tm_about .about_short_contact_wrap ul li a{color: #fff;}
-body.dark .arlo_tm_services{background-color: #111;}
-body.dark .arlo_tm_services .service_inner ul li .inner{
-	background-color: #000;
-	box-shadow: 0px 0px 20px rgb(255 255 255 / 9%);
-}
-body.dark .arlo_tm_services .service_inner ul li .inner:hover{box-shadow: 0px 0px 20px rgb(255 255 255 / 20%);}
-body.dark .arlo_tm_services .lets_work a{color: #fff;}
-body.dark .arlo_tm_services .lets_work a:before{background: rgba(255,255,255,.2);}
-body.dark .arlo_tm_portfolio .portfolio_filter ul li a{color: #fff;}
-body.dark .arlo_tm_news{background-color: #111;}
-body.dark .arlo_tm_news .news_list ul li .details .title a{color: #fff;}
-body.dark .arlo_tm_news .news_list ul li .details .date{color: #bbb;}
-body.dark .arlo_tm_news .news_list ul li .details .date a{color: #bbb;}
-body.dark .arlo_tm_modalbox_news .details .title{color: #000;}
-body.dark .arlo_tm_modalbox_news .description p{color: #333;}
-body.dark .arlo_tm_contact .fields ul li input{
-	background-color: transparent;
-	border: 1px solid rgba(255,255,255,.2);
-	color: #fff;
-}
-body.dark .arlo_tm_contact .fields .last textarea{
-	background-color: transparent;
-	border: 1px solid rgba(255,255,255,.2);
-	color: #fff;
-}
-body.dark .arlo_tm_copyright{background-color: #111;}
-body.dark .arlo_tm_leftpart{background-color: #000;border-right: 1px solid rgba(255,255,255,.08);}
+@charset "utf-8";
+
+#darkPH:hover, #darkPC:hover {cursor: pointer;}
+  
+body.dark{
+
+	background-color: rgb(24, 26, 27);
+
+	color: rgb(200, 195, 188);
+
+}
+
+body.dark h3, body.dark h2, body.dark h1, body.dark h4, body.dark h5, body.dark h6{
+
+	color: rgb(232, 230, 227);
+
+}
+
+body.dark .arlo_tm_topbar.animate{
+
+	background-color: rgb(24, 26, 27);
+
+	box-shadow: 0px 0px 20px rgb(255 255 255 / 9%);
+
+}
+
+body.dark .arlo_tm_topbar.animate .logo .dark{display: none;}
+
+body.dark .arlo_tm_topbar.animate .logo .light{display: block;}
+
+body.dark .arlo_tm_topbar.animate .menu ul li a{color: #fff;}
+
+body.dark .arlo_tm_about .left .about_image_wrap .border .inner{border-color: rgba(255,255,255,.2);}
+
+body.dark .arlo_tm_about ul li label{color: #fff;}
+
+body.dark .arlo_tm_about .about_short_contact_wrap ul li a{color: #fff;}
+
+body.dark .arlo_tm_services{background-color: rgb(27, 30, 31);}
+
+body.dark .arlo_tm_services .service_inner ul li .inner{
+
+	background-color: rgb(24, 26, 27);
+
+	box-shadow: 0px 0px 20px rgb(255 255 255 / 9%);
+
+}
+
+body.dark .flip-card-front{background-color: rgb(24, 26, 27);color: rgb(232, 230, 227);box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 20px;}
+
+body.dark .flip-card-back {background-color: rgb(0, 94, 186);color: rgb(232, 230, 227);box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 20px;}
+
+body.dark .flip-card-front img {filter: invert();}
+
+body.dark .arlo_tm_services .service_inner ul li .inner:hover{box-shadow: 0px 0px 20px rgb(255 255 255 / 20%);}
+
+body.dark .arlo_tm_services .lets_work a{color: #fff;}
+
+body.dark .arlo_tm_services .lets_work a:before{background: rgba(255,255,255,.2);}
+
+body.dark .arlo_tm_portfolio .portfolio_filter ul li a{color: #fff;}
+
+body.dark .arlo_tm_news{background-color: rgb(27, 30, 31);}
+
+body.dark .arlo_tm_news .news_list ul li .details .title a{color: #fff;}
+
+body.dark .arlo_tm_news .news_list ul li .details .date{color: #bbb;}
+
+body.dark .arlo_tm_news .news_list ul li .details .date a{color: #bbb;}
+
+body.dark .arlo_tm_modalbox_news .details .title{color:rgb(24, 26, 27);}
+
+body.dark .arlo_tm_modalbox_news .description p{color: #333;}
+
+body.dark .topper_one, body.dark .topper_two, body.dark .topper_three, body.dark .topper_four {background-color: rgb(24, 26, 27);border-bottom-color: rgb(71, 77, 80);border-right-color: rgb(71, 77, 80);}
+
+body.dark table tr, body.dark table td {border-color: rgb(53, 57, 59);}
+
+body.dark .arlo_tm_contact .fields ul li input{
+
+	background-color: transparent;
+
+	border: 1px solid rgba(255,255,255,.2);
+
+	color: #fff;
+
+}
+
+body.dark .arlo_tm_contact .fields .last textarea{
+
+	background-color: transparent;
+
+	border: 1px solid rgba(255,255,255,.2);
+
+	color: #fff;
+
+}
+
+body.dark .arlo_tm_copyright{background-color: rgb(0, 0, 0);}
+
+body.dark .arlo_tm_leftpart{background-color: rgb(0, 27, 55);border-right: 1px solid rgba(255,255,255,.08);}
+

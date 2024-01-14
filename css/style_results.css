@@ -1,14 +1,27 @@
 /* DARK MODE */
 
-#dark.dark-mode {
+#darkPH.dark-mode {
   filter: invert();
 }
 
-#dark:hover {
+#darkPH:hover {
   cursor: pointer;
 }
 
-#dark {
+#darkPH {
+  margin-right: 10px;
+  padding-bottom: 3px;
+}
+
+#darkPC.dark-mode {
+  filter: invert();
+}
+
+#darkPC:hover {
+  cursor: pointer;
+}
+
+#darkPC {
   margin-right: 10px;
   padding-bottom: 3px;
 }

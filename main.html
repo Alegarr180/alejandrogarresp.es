@@ -15,6 +15,36 @@
 <link rel="stylesheet" type="text/css" href="css/colors.css" />
 <link rel="stylesheet" type="text/css" href="css/darkMode.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<script type="text/javascript">
+  function toggleDarkMode() {
+          const body = document.body;
+          const span = document.querySelector('td h1 span'); 
+          const darkPH = document.getElementById("darkPH");
+          const darkPC = document.getElementById("darkPC");
+
+          body.classList.toggle("dark");
+          darkPH.classList.toggle("dark");
+          darkPC.classList.toggle("dark");
+  
+          // Almacena la preferencia en localStorage
+          const isDarkMode = body.classList.contains("dark");
+          localStorage.setItem("darkMode", isDarkMode);
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+          const savedDarkMode = localStorage.getItem("darkMode");
+
+          if (savedDarkMode === "true") {
+                          
+              document.body.classList.add("dark");
+              document.getElementById("darkPC").classList.add("dark");
+              document.getElementById("darkPH").classList.add("dark");
+              
+          }
+      });
+</script>
+
 </head>
 <body> 
 
@@ -77,8 +107,10 @@
 <div class="container">
 <div class="mobile_in">
 <div class="logo">
+
   <a href="./en/main.html"><img src="./img/united-kingdom.png" width="32px" style="margin-right: 15px;" alt="EN" /></a>
   <img src="./img/spain.png" width="32px" alt="ES" />
+  <img id="darkPH" onclick="toggleDarkMode()" src="./img/dark-mode.svg" width="32px">
 </div>
 <div class="my_trigger">
 <div class="hamburger hamburger--collapse-r">
@@ -125,6 +157,7 @@
 <div class="bottom">
   <div class="language">
     <ul>
+      <li><img id="darkPC" onclick="toggleDarkMode()" src="./img/dark-mode.svg" width="48px" style="filter: invert();"></li>
       <li><a href="./en/main.html"><img src="./img/united-kingdom.png" alt="EN"></li></a>
       <li><img src="./img/spain.png" alt="ES"></li>
     </ul>
@@ -252,7 +285,7 @@
   <h4> - 2023/ACTUAL </h4>
   
 </div>
-    <p>Coordinación, planificación y gestión de proyectos. Soporte informático interno. Administración de CPD basado en Proxmox de alta disponibilidad. Arquitectura de redes segmentadas. Monitorización de recursos y alertas. Colaboración interdepartamental. Formación en materia de ciberseguridad a la plantilla.</p>
+    <p>Coordinación, planificación y gestión de proyectos. Soporte informático interno. Despliegue y administración de CPD basado en Proxmox de alta disponibilidad. Arquitectura de redes segmentadas. Monitorización de recursos y alertas. Colaboración interdepartamental. Formación en materia de ciberseguridad a la plantilla.</p>
         </div>
         <div class="flip-card-back" id="bthree">
           <h1>SKILLS</h1>
