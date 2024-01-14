@@ -2746,6 +2746,9 @@ body.dark .arlo_tm_settings .cursor li .svg,
 @media (max-width: 410px) {
 	.arlo_tm_services .lets_work p {margin-top: 70vh;}
 	.arlo_tm_services .service_inner ul{row-gap: 60vh;}
+	body .idiomas td{font-size: 0.8em ;}
+	body .idiomas h4{font-size: 1.5em ;}
+	body .idiomas h6{font-size: 0.8rem ;}
 }
 
 @media (max-width: 350px) {
