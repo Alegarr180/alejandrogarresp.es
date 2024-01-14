@@ -36,6 +36,8 @@ jQuery(document).ready(function(){
 		arlo_tm_modalbox_news();
 	});
 	
+	jQuery('.arlo_tm_preloader').addClass('loaded');
+
 	window.addEventListener("load", function (){
 		setTimeout(function(){
 			jQuery('.arlo_tm_preloader').addClass('loaded');
