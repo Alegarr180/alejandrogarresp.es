@@ -14,10 +14,12 @@
     function toggleDarkMode() {
             const body = document.body;
             const span = document.querySelector('td h1 span'); 
-            const button = document.getElementById("dark");
+            const darkPH = document.getElementById("darkPH");
+            const darkPC = document.getElementById("darkPC");
 
             body.classList.toggle("dark-mode");
-            button.classList.toggle("dark-mode");
+            darkPH.classList.toggle("dark-mode");
+            darkPC.classList.toggle("dark-mode");
     
             // Almacena la preferencia en localStorage
             const isDarkMode = body.classList.contains("dark-mode");
@@ -30,7 +32,8 @@
             if (savedDarkMode === "true") {
                             
                 document.body.classList.add("dark-mode");
-                document.getElementById("dark").classList.add("dark-mode");
+                document.getElementById("darkPC").classList.add("dark-mode");
+                document.getElementById("darkPH").classList.add("dark-mode");
                 
             }
         });
@@ -45,9 +48,17 @@
   <header>
     <!-- Logo -->
     <div class="logo-area">
-      <a href="../index.html" title="Go to Google Home">
+      <a href="./index.html" title="Go to Google Home">
         <img src="../img/google-logo.png" alt="Google" class="logo">
       </a>
+      <div id="langPH">
+
+        <img id="darkPH" onclick="toggleDarkMode()" src="../img/dark-mode.svg" width="32px">
+  
+        <p id="en"><img src="../img/united-kingdom.png" alt="EN" width="32px"></p>
+        <p>/</p>
+        <a id="es" href="../results.html"><img src="../img/spain.png" alt="ES" width="32px"></a>
+    </div>
     </div>
 
     <!-- Search -->
@@ -164,14 +175,14 @@
       </div>
     </nav>
 
-    <div id="lang">
+    <div id="langPC">
 
-      <img id="dark" onclick="toggleDarkMode()" src="../img/dark-mode.svg" width="32px">
-
+      <img id="darkPC" onclick="toggleDarkMode()" src="../img/dark-mode.svg" width="32px">
+  
       <p id="en"><img src="../img/united-kingdom.png" alt="EN" width="32px"></p>
-        <p>/</p>
-        <a id="es" href="../results.html"><img src="../img/spain.png" alt="ES" width="32px"></a>
-    </div>
+      <p>/</p>
+      <a id="es" href="../results.html"><img src="../img/spain.png" alt="ES" width="32px"></a>
+  </div>
   </header>
 
   <!-- Main Content -->
@@ -183,20 +194,21 @@
         <!-- Search Results -->
         <div class="search-result">
           <a href="./main.html">
-            <p class="cite">alejandrogarresp.ga › main<span class="caret">&#9660;</span></p>
+            <p class="cite">alejandrogarresp.es › main<span class="caret">&#9660;</span></p>
             <h3>Curriculum Vitae - Alejandro Garres</h3>
           </a>
-          <img src="../img/mouse_click.svg" id="mouse" width="32px" alt="">
+          <img src="../img/mouse_click.svg" id="mousePC" width="32px" alt="">
           <p class="result-text">
             Review the complete personal career of <b>Alejandro Garres Pelaz</b>
           </p>
+          <img src="../img/mouse_click.svg" id="mousePH" width="32px" alt="">
         </div>
         <hr>
         <div class="sidebar-mobile">
           <div class="bio-box">
             <div class="bio-box-tittle">
               <h1 id="tittle">Alejandro Garres</h1>
-              <p id="subtittle">IT specialist / Carpenter</p>
+              <p id="subtittle">IT Manager / Carpenter</p>
               <div class="galeria">
                 <table>
                   <tr>
