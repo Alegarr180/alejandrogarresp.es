@@ -23,6 +23,10 @@ body.dark .arlo_tm_topbar.animate{
 
 }
 
+body.dark .arlo_tm_mobile_menu .dropdown {background-color: rgb(0, 50, 90);}
+
+body.dark .arlo_tm_mobile_menu .dropdown .dropdown_inner ul li a {color: white;}
+
 body.dark .arlo_tm_topbar.animate .logo .dark{display: none;}
 
 body.dark .arlo_tm_topbar.animate .logo .light{display: block;}
