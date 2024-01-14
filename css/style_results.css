@@ -61,7 +61,7 @@ body.dark-mode .search-result a:visited {
   color: rgb(202, 97, 255);
 }
 
-body.dark-mode .search-result a, body.dark-mode .related-searches-card a {
+body.dark-mode .search-result a, body.dark-mode .related-searches-card a, body.dark-mode .related-searches-card a span {
   color: rgb(105, 151, 244);
 }
 
