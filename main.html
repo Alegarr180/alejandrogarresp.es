@@ -22,10 +22,13 @@
           const span = document.querySelector('td h1 span'); 
           const darkPH = document.getElementById("darkPH");
           const darkPC = document.getElementById("darkPC");
+          const rydoo = document.getElementById("rydoo");
+          
 
           body.classList.toggle("dark");
           darkPH.classList.toggle("dark");
           darkPC.classList.toggle("dark");
+          rydoo.classList.toggle("rydoo-d");
   
           // Almacena la preferencia en localStorage
           const isDarkMode = body.classList.contains("dark");
@@ -477,7 +480,8 @@
     <div class="topper_four">
     <div class="competencias" style="margin-bottom: 20px">
       <p>· </p>
-      <p>· <p>
+      <p>· </p>
+      <p>· </p>
       <p>· </p>
       <p>· </p>
       <p>· </p>
@@ -603,47 +607,75 @@
 <h3>¿Hablamos?</h3>
 </div>
 <div class="desc">
-<p class="wow txt" data-splitting>Rellena el siguiente formulario o contacta directamente conmigo a través de mi email:</p> <a href="mailto:alejandrogarresp@gmail.com"><span>alejandrogarresp@gmail.com</span></a>
+<p class="wow txt" data-splitting>Contacta directamente conmigo a través de mi email: <a href="mailto:alejandrogarresp@gmail.com"><span>alejandrogarresp@gmail.com</span></a></p> 
 </div>
 <div class="wrapper">
 <div class="left wow fadeInLeft" data-wow-duration="1.5s">
-<div class="fields"><iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-  <form action="./mail/mailer.php" target="dummyframe" method="post" class="contact_form" id="contact_form">
-<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-<div class="first">
-<ul>
-<li>
-<input id="name" name="Name" type="text" placeholder="Nombre" autocomplete="off">
-</li>
-<li>
-<input id="email" name="Email" type="text" placeholder="Email" autocomplete="off">
-</li>
-</ul>
-</div>
-<div class="last">
-<textarea id="message" name="Message" placeholder="Mensaje"></textarea>
-</div>
-<div class="arlo_tm_button" data-color="dark">
-  <button type="submit" id="boton" class="transform">Enviar Mensaje
-    <div class="trigger"></div>
-<svg version="1.1" id="tick" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 37 37" style="enable-background:new 0 0 37 37;" xml:space="preserve">
-<path class="circ path" style="fill:none;stroke:rgb(255, 255, 255);stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;" d="
-	M30.5,6.5L30.5,6.5c6.6,6.6,6.6,17.4,0,24l0,0c-6.6,6.6-17.4,6.6-24,0l0,0c-6.6-6.6-6.6-17.4,0-24l0,0C13.1-0.2,23.9-0.2,30.5,6.5z"
-	/>
-<polyline class="tick path" style="fill:none;stroke:rgb(255, 255, 255);stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;" points="
-	11.6,20 15.9,24.2 26.4,13.8 "/>
-</svg>
-  </button>
-  
-</div>
 
-</form>
+<ul id="tech">
+
+<div id="strow">
+
+    <li class="inner-tech">
+      <img src="./img/svg/jira-1.svg" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/wireshark.svg" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/m365.svg" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/wazuh.svg" alt="">
+    </li>
+
 </div>
+<div id="ndrow">
+
+    <li class="inner-tech">
+      <img src="./img/svg/docker.svg" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/netsuite.svg" class="tech-dark" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/adobe.svg" class="tech-dark" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/NTCT.svg" alt="">
+    </li>
+
+</div>
+<div id="trrow">
+
+    <li class="inner-tech">
+      <img src="./img/svg/pfSense.svg" class="tech-dark" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/proxmox.svg" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/bmc.svg" alt="">
+    </li>
+
+    <li class="inner-tech">
+      <img src="./img/svg/rydoo.svg" style="filter: invert(100%) sepia(12%) saturate(2929%) hue-rotate(88deg) brightness(137%) contrast(117%);" id="rydoo" alt="">
+    </li>
+
+</div>
+</ul>
+
 </div>
 <div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23845.738729398283!2d-4.734153506921101!3d41.66184876900539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd476d5b9f006719%3A0xdca4e82e66dbc311!2sGir%C3%B3n%2C%2047009%20Valladolid!5e0!3m2!1ses!2ses!4v1671184241917!5m2!1ses!2ses" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23845.738729398283!2d-4.734153506921101!3d41.66184876900539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd476d5b9f006719%3A0xdca4e82e66dbc311!2sGir%C3%B3n%2C%2047009%20Valladolid!5e0!3m2!1ses!2ses!4v1671184241917!5m2!1ses!2ses" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <!--
 <div class="map_wrap">
 <div class="map" id="ieatmaps"></div>

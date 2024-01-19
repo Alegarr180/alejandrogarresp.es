@@ -668,7 +668,7 @@ function arlo_tm_animate_text(){
 
 	animateSpan.typed({
 
-		strings: ["IT specialist", "Carpenter", "Photographer"],
+		strings: ["IT Manager", "Carpenter", "Photographer"],
 
 		loop: true,
 
