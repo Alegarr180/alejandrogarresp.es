@@ -1871,6 +1871,13 @@ hr {
   display: none;
 }
 
+@media (max-width: 500px) {
+
+  #imagen1, #imagen2 {
+    width: 155px;
+  }
+
+  }
 
 @media (max-width: 400px) {
 
