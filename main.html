@@ -22,13 +22,11 @@
           const span = document.querySelector('td h1 span'); 
           const darkPH = document.getElementById("darkPH");
           const darkPC = document.getElementById("darkPC");
-          const rydoo = document.getElementById("rydoo");
           
 
           body.classList.toggle("dark");
           darkPH.classList.toggle("dark");
           darkPC.classList.toggle("dark");
-          rydoo.classList.toggle("rydoo-d");
   
           // Almacena la preferencia en localStorage
           const isDarkMode = body.classList.contains("dark");
@@ -43,7 +41,6 @@
               document.body.classList.add("dark");
               document.getElementById("darkPC").classList.add("dark");
               document.getElementById("darkPH").classList.add("dark");
-              
           }
       });
 </script>
@@ -94,15 +91,6 @@
 </div>
 -->
 
-<div class="arlo_tm_modalbox_news">
-<div class="box_inner">
-<div class="close">
-<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
-</div>
-<div class="description_wrap">
-</div>
-</div>
-</div>
 
 
 <div class="arlo_tm_mobile_menu">
@@ -144,7 +132,7 @@
 
 <div class="arlo_tm_leftpart">
 <div class="inner">
-<div class="logo">
+<div class="logo"> <!-- AÑADIR LOGO -->
 <a href="#"><img src="img/logo/sidebar/light.png" alt="" /></a>
 </div>
 <div class="menu scrollable">
@@ -240,16 +228,16 @@
 <span class="material-icons-round">email</span><label>E-mail:</label><a href="mailto:alejandrogarresp@gmail.com">alejandrogarresp@gmail.com</a> 
 </li>
 <li>
-<span class="material-icons-round">card_giftcard</span><label>Fecha de cumpleaños:</label> 14/09/2002
+<span class="material-icons-round">card_giftcard</span><label>Fecha de cumpleaños:&nbsp</label> 14/09/2002
 </li>
 <li>
 <span class="material-icons-round">phone</span><label>Teléfono:</label><a href="tel:+34 665 87 93 46">+34 665 87 93 46</a>
 </li>
 <li>
-<span class="material-icons-round">home</span><label>Residencia:</label>  España, Valladolid, 47009
+<span class="material-icons-round">home</span><label>Residencia:&nbsp</label>  España, Valladolid, 47009
 </li>
 <li>
-<span class="material-icons-round">drive_eta</span><label>Permiso de conducción: </label> B
+<span class="material-icons-round">drive_eta</span><label>Permiso de conducción: &nbsp</label>B
 </li>
 <li>
 <span class="material-icons-round">favorite</span><label>Intereses:</label> Electrónica, Deportes
@@ -612,6 +600,35 @@
 <div class="wrapper">
 <div class="left wow fadeInLeft" data-wow-duration="1.5s">
 
+<table id="tech">
+  <tbody>
+  <tr>
+      <td class="inner-tech"><a href="https://www.atlassian.com/es/software/jira" target="_blank"><img src="./img/svg/jira-1.svg" alt="Jira"></a></td>
+      <td class="inner-tech"><a href="https://www.wireshark.org" target="_blank"><img src="./img/svg/wireshark.svg" alt="Wireshark"></a></td>
+      <td class="inner-tech"><a href="https://www.office.com" target="_blank"><img src="./img/svg/m365.svg" alt="Microsoft 365"></a></td>
+      <td class="inner-tech"><a href="https://wazuh.com" target="_blank"><img src="./img/svg/wazuh.svg" alt="Wazuh"></a></td>
+  </tr>
+  <tr>
+  </tr>
+      <td class="inner-tech"><a href="https://www.docker.com" target="_blank"><img src="./img/svg/docker.svg" alt="Docker"></a></td>
+      <td class="inner-tech"><a href="https://www.netsuite.com/portal/es/home.shtml" target="_blank" rel="noopener noreferrer"><img src="./img/svg/netsuite.svg" class="tech-dark" alt="Oracle NetSuite"></a></td>
+      <td class="inner-tech"><a href="https://creativecloud.adobe.com/es" target="_blank"><img src="./img/svg/adobe.svg" class="tech-dark" alt="Adobe Suite"></a></td>
+      <td class="inner-tech"><a href="https://www.netscout.com/product/arbor-threat-mitigation-system" target="_blank"><img src="./img/svg/NTCT.svg" alt="NetScout TMS"></a></td>
+  <tr>
+      <td class="inner-tech"><a href="https://www.pfsense.org" target="_blank"><img src="./img/svg/pfSense.svg" class="tech-dark" alt="pfSense"></a></td>
+      <td class="inner-tech"><a href="https://www.proxmox.com/en/" target="_blank"><img src="./img/svg/proxmox.svg" alt="Proxmox"></a></td>
+      <td class="inner-tech"><a href="https://www.bmcsoftware.es/it-solutions/bmc-helix-itsm.html" target="_blank"><img src="./img/svg/bmc.svg" alt="BMC Helix ITSM"></a></td>
+      <td class="inner-tech"><a href="https://www.rydoo.com/es/" target="_blank"><img src="./img/svg/rydoo.svg" class="tech-dark" alt="Rydoo"></a></td>
+  </tr>
+</tbody>
+<tfoot>
+  <tr>
+      <td colspan="4"><b><p>&#160</p></b></td>
+  </tr>
+</tfoot>
+</table>
+
+  <!--
 <ul id="tech">
 
 <div id="strow">
@@ -667,13 +684,14 @@
     </li>
 
     <li class="inner-tech">
-      <img src="./img/svg/rydoo.svg" style="filter: invert(100%) sepia(12%) saturate(2929%) hue-rotate(88deg) brightness(137%) contrast(117%);" id="rydoo" alt="">
+      <img src="./img/svg/rydoo.svg" class="tech-dark" alt="">
     </li>
 
 </div>
 </ul>
-
+-->
 </div>
+
 <div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23845.738729398283!2d-4.734153506921101!3d41.66184876900539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd476d5b9f006719%3A0xdca4e82e66dbc311!2sGir%C3%B3n%2C%2047009%20Valladolid!5e0!3m2!1ses!2ses!4v1671184241917!5m2!1ses!2ses" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <!--
@@ -717,7 +735,7 @@
 </div>
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./js/jquery.js"></script>
+</script><script src="./js/jquery.js"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <script src="./js/plugins.js"></script>
 <script src="./js/init.js"></script>
@@ -726,6 +744,7 @@
 <script src="./js/matrix.js"></script>
 <script src="./js/position.js"></script>
 <script src="./js/mail.js"></script>
+<script src="./js/tech.js"></script>
 
 
 </body>

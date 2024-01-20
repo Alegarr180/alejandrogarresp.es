@@ -1662,9 +1662,9 @@ body.modal{
 	}
 }
 
-#tech {
+#tech, #tech td, #tech tr {
 
-
+	border: none;
 }
 
 #tech .inner-tech {
@@ -1677,10 +1677,18 @@ body.modal{
 #tech .inner-tech img {
 
 	display: block;
-	max-width:118px;
-	max-height:117px;
+	max-width:96px;
+	max-height:96px;
 	width: auto;
 	height: auto;
+	transition: all .1s ease-in-out;
+}
+
+
+#tech .inner-tech img:hover { transform: scale(1.2); }
+
+#tech p {
+	text-align: center;
 }
 
 #ndrow li {
@@ -2776,6 +2784,7 @@ body.dark .arlo_tm_settings .cursor li .svg,
 	body .idiomas td{font-size: 0.8em ;}
 	body .idiomas h4{font-size: 1.5em ;}
 	body .idiomas h6{font-size: 0.8rem ;}
+	#tech .inner-tech img {max-width:70px;max-height:70px;}
 }
 
 @media (max-width: 350px) {
