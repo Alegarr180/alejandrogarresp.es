@@ -1136,11 +1136,11 @@ h6 { font-size: 16px; }
 }
 
 .CETI {
-
+	text-align: end;
 }
 
 .CFGS {
-	text-align: end;
+	
 }
 
 .topper_two {
@@ -1160,7 +1160,7 @@ h6 { font-size: 16px; }
 }
 
 .CFGM {
-	
+	text-align: end;
 }
 
 .topper_three {
@@ -1179,10 +1179,6 @@ h6 { font-size: 16px; }
 	transform: translate(-10px, 10px);
 }
 
-.ESO {
-
-}
-
 .topper_four {
 
 	transition: transform .3s ease-out;
@@ -1196,10 +1192,6 @@ h6 { font-size: 16px; }
 .topper_four:hover {
 
 	transform: translate(10px, 10px);
-}
-
-.Primaria {
-	text-align: end;
 }
 
 .competencias {
