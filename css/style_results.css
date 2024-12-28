@@ -1201,7 +1201,11 @@ b {
 
 }
 
-
+.q4txt ul {
+    margin: revert;
+    padding: revert;
+    list-style: revert;
+}
 
 .inactiveq4 {
 
